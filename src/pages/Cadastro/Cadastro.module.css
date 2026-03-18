@@ -1,0 +1,59 @@
+.container { 
+  padding-top: 120px; 
+  display: flex; 
+  justify-content: center; 
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.form { 
+  background: white; 
+  padding: 35px; 
+  border-radius: 8px; 
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+  width: 100%; 
+  max-width: 480px; 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.formTitle { margin: 0; font-size: 1.4rem; color: #333; text-align: center; }
+.formDivider { width: 50px; border: 1.5px solid #6c5ce7; margin: 15px auto 25px; }
+
+.inputGroup { display: flex; flex-direction: column; gap: 5px; margin-bottom: 18px; }
+.inputGroup label { font-size: 0.8rem; font-weight: 700; color: #666; }
+
+.inputGroup input, .inputGroup select, .inputGroup textarea { 
+  padding: 12px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  font-family: inherit; 
+  font-size: 0.95rem;
+}
+
+.inputGroup input:focus { border-color: #6c5ce7; outline: none; }
+
+.btnSubmit { 
+  background: #6c5ce7; 
+  color: white; 
+  border: none; 
+  padding: 15px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-weight: 800; 
+  font-size: 0.9rem; 
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.btnSubmit:hover { background: #5a4ad1; }
+
+.obs { font-size: 0.7rem; color: #999; margin-top: 15px; text-align: center; }
+
+.toast { 
+  position: fixed; top: 90px; right: 20px; 
+  background: #2d3436; color: #fff; 
+  padding: 8px 16px; font-size: 0.85rem; 
+  border-radius: 4px; z-index: 9999; 
+}

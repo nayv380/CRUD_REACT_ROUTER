@@ -1,38 +1,17 @@
-import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Cadastro from './pages/Cadastro';
-import './index.css';
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import Cadastro from './pages/Cadastro/Cadastro';
 
 function App() {
-  const [itens, setItens] = useState([
-    { 
-      id: 1, 
-      nome: 'Teclado Mecânico', 
-      categoria: 'Periféricos', 
-      valor: 250.00, 
-      especificacoes: 'RGB, Switch Blue' 
-    }
-  ]);
-
-  const adicionarItem = (novoItem) => {
-    setItens([...itens, { ...novoItem, id: Date.now() }]);
-  };
-
-  const deletarItem = (id) => {
-    setItens(itens.filter(item => item.id !== id));
-  };
-
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home lista={itens} aoDeletar={deletarItem} />} />
-        <Route path="/cadastro" element={<Cadastro aoSalvar={adicionarItem} />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/cadastro" element={<Cadastro />} />
       </Routes>
     </>
   );
 }
-
 export default App;

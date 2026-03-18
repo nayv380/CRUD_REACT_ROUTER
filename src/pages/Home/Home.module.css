@@ -1,0 +1,43 @@
+.container { max-width: 1200px; margin: 0 auto; padding: 120px 20px; text-align: center; }
+.header { margin-bottom: 40px; }
+.mainTitle { font-size: 2.2rem; color: #2d3436; font-weight: 800; }
+.divider { width: 80px; border: 2px solid #6c5ce7; margin: 15px auto; }
+.subTitle { font-size: 1.1rem; color: #636e72; font-weight: 600; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; }
+
+.card { background: #fff; border: 1px solid #e1e4e8; border-radius: 6px; padding: 20px; display: flex; flex-direction: column; transition: 0.3s; }
+.cardHeader { display: flex; justify-content: space-between; font-size: 0.7rem; font-weight: 800; color: #6c5ce7; padding-bottom: 5px; }
+
+.content { padding: 15px 0; text-align: center; flex-grow: 1; }
+.nome { margin: 0 0 8px; font-size: 1.4rem; color: #2d3436; }
+.quantidadeBadge { font-size: 0.75rem; font-weight: 700; color: #6c5ce7; background: #eeebff; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; }
+.desc { font-size: 0.85rem; color: #7f8c8d; margin: 12px 0; min-height: 35px; }
+.valor { font-size: 1.25rem; font-weight: 800; color: #2d3436; display: block; }
+
+/* EDIÇÃO INLINE */
+.editRow { display: flex; justify-content: center; gap: 5px; }
+.editRow input { width: 90px; padding: 5px; border: 2px solid #6c5ce7; border-radius: 4px; font-weight: bold; }
+.btnOk { background: #2ecc71; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+.btnX { background: #fab1a0; color: #d63031; border: none; padding: 5px 10px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+
+/* AÇÕES LADO A LADO */
+.actions { display: flex; gap: 10px; padding-top: 15px; }
+.btnSecondary, .btnDanger { flex: 1; padding: 10px; font-size: 0.7rem; font-weight: 800; cursor: pointer; border-radius: 4px; transition: 0.2s; }
+.btnSecondary { background: #fff; color: #6c5ce7; border: 1px solid #6c5ce7; }
+.btnSecondary:hover { background: #6c5ce7; color: #fff; }
+.btnDanger { background: #fff; color: #e17055; border: 1px solid #fab1a0; }
+.btnDanger:hover { background: #ff7675; color: #fff; }
+
+/* CONFIRMAÇÃO */
+.confirmBox { width: 100%; display: flex; justify-content: space-between; align-items: center; background: #fff5f5; padding: 6px 12px; border-radius: 4px; border: 1px solid #feb2b2; }
+.confirmBox span { font-size: 0.75rem; font-weight: 800; color: #d63031; }
+.confirmBtns { display: flex; gap: 8px; }
+.btnSim { background: #d63031; color: #fff; border: none; padding: 5px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; cursor: pointer; }
+.btnNao { background: #b2bec3; color: #fff; border: none; padding: 5px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: 800; cursor: pointer; }
+
+/* TOAST PEQUENO */
+.toast { position: fixed; top: 100px; right: 20px; background: #2d3436; color: #fff; padding: 8px 16px; font-size: 0.85rem; border-radius: 4px; z-index: 9999; font-weight: 600; box-shadow: 0 4px 10px rgba(0,0,0,0.2); animation: slideIn 0.3s ease; }
+
+hr { border: 0; border-top: 1px solid #eee; margin: 10px 0; }
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
