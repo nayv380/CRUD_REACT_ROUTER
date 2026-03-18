@@ -42,3 +42,6 @@ Durante o desenvolvimento, os principais desafios foram:
 ### 1. Clonando o Repositório
 ```bash
 git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+
+### 2. Entre no Vercel
+[Clique aqui](https://crud-react-router-sepia.vercel.app/cadastro) 
