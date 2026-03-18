@@ -40,7 +40,7 @@ Durante o desenvolvimento, os principais desafios foram:
 * [Git](https://git-scm.com/)
 
 ### 2. Entre no Vercel
-* [Clique aqui]([https://crud-react-router-sepia.vercel.app/cadastro](https://crud-react-router-mll5tdwsk-nayv380s-projects.vercel.app/)) 
+* [Clique aqui](https://crud-react-router-mll5tdwsk-nayv380s-projects.vercel.app/)
 
 ### 1. Clonando o Repositório
 ```bash
